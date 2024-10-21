@@ -1,0 +1,32 @@
+.drum-pad-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.drum-pad {
+  width: 90px;
+  height: 90px;
+  background-color: #111;
+  color: #f00;
+  font-size: 1.2em;
+  border: 2px solid #f00;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #f00;
+}
+
+.drum-pad:active {
+  background-color: #333;
+  box-shadow: 0 0 20px #f00;
+}
+body {
+  background-color: #000; /* This sets the background to black */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Optional: Set a clean font for better appearance */
+}
